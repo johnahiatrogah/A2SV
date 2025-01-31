@@ -1,0 +1,25 @@
+def split_and_join(line):
+    # write your code here
+  a = []
+  biuld = ""
+  for char in line:
+    if char == " ":
+      if biuld:
+         a.append(biuld)
+         biuld = ""
+    else:
+        biuld += char
+  if biuld:
+    a.append(biuld)
+        
+  b = ""
+  for i in range(len(a)):
+    b += a[i]
+    if i < len(a)-1:
+        b += "-"
+  return b
+
+if __name__ == '__main__':
+    line = input()
+    result = split_and_join(line)
+    print(result)
