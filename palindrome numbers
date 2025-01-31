@@ -1,0 +1,14 @@
+class Solution(object):
+    def isPalindrome(self, x):
+        """
+        :type x: int
+        :rtype: bool
+        """
+        strx = str(x)
+        a = strx[0::]
+        b = strx[::-1]
+        # if a == b:
+            # print('True')
+        # else:
+            # print('False')
+        return a == b
